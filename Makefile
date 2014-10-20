@@ -47,7 +47,7 @@ libdir=$(exec_prefix)/lib
 # The directory to install the info files in.
 infodir=$(exec_prefix)/info
 # The directory to install the include files in.
-includedir=$(exec_prefix)/include
+includedir=$(exec_prefix)/include/rtautils
 # The directory to install the icon
 icondir=$(HOME)/.local/share/applications/
 
@@ -249,7 +249,7 @@ install: all
 	#$(COPY_FILE) $(LIB_DESTDIR)/$(TARGET1) $(libdir)
 	#$(COPY_FILE) $(LIB_DESTDIR)/$(TARGET2) $(libdir)
 	#$(COPY_FILE) $(LIB_DESTDIR)/$(TARGETD) $(libdir)
-	#$(COPY_FILE) $(INCLUDE) $(includedir)
+	$(COPY_FILE) $(INCLUDE) $(includedir)
 	
 	# For exe installation
 	#test -d $(bindir) || mkdir -p $(bindir)	
