@@ -1,5 +1,5 @@
 /*
-   thread.cpp
+   Thread.cpp
 
    Definition of a Java style thread class in C++.
 
@@ -20,7 +20,7 @@
    limitations under the License.
 */
 
-#include "thread.h"
+#include "Thread.h"
 
 static void* runThread(void* arg)
 {
