@@ -66,19 +66,19 @@ ICON_DIR = ui
 ####### 4) Compiler, tools and options
 
 ifneq (, $(findstring mpi, $(LINKERENV)))
-CC       = mpic++
+CC       ?= mpic++
 else
-CC       = gcc
+CC       ?= gcc
 endif
 
 #Set INCPATH to add the inclusion paths
 INCPATH = -I $(INCLUDE_DIR) 
 LIBS = -lstdc++
 #Insert the optional parameter to the compiler. The CFLAGS could be changed externally by the user
-CFLAGS   = -g
-CXXFLAGS =
+CFLAGS   ?= -g
+CXXFLAGS ?=
 #Insert the implicit parameter to the compiler:
-ALL_CFLAGS = -m64 -fexceptions -Wall  $(INCPATH)
+ALL_CFLAGS = -Wall -fPIC $(INCPATH)
 
 ifneq (, $(findstring cfitsio, $(LINKERENV)))
 	LIBS += -lcfitsio
