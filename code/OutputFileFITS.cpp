@@ -242,7 +242,6 @@ void OutputFileFITS::writeString(int ncol, std::vector< std::vector<char> >& buf
 		throwException("Error in OutputFileFITS::writeString() ", status);
 
 	long nelem = lrow - frow + 1;
-	unsigned int size = buff[0].size();
 	char** buffptrs = new char*[nelem];
 	for(unsigned int row=frow; row<lrow+1; row++)
 	{

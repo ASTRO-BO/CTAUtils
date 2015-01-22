@@ -102,8 +102,8 @@ class InputFileText : public InputFile {
 		bool reopen();
 		bool test(int ncol, long frow, long& lrow);
 
-		int ncols;
 		long nrows;
+		int ncols;
 
 		template<class T>
 		void readData(std::vector<T> &buff, int ncol, long frow, long lrow);
