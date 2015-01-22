@@ -13,15 +13,15 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef QL_IO_INPUTFILE_H
-#define QL_IO_INPUTFILE_H
+#ifndef CTAUTILS_INPUTFILE_H
+#define CTAUTILS_INPUTFILE_H
 
 #include <string>
 #include <stdint.h>
 #include <vector>
 #include "File.h"
 
-namespace qlbase {
+namespace CTAUtils {
 
 template<class T>
 struct Image {

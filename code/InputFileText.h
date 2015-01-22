@@ -21,7 +21,7 @@
 #include <vector>
 #include "InputFile.h"
 
-namespace qlbase {
+namespace CTAUtils {
 
 class InputFileText : public InputFile {
 

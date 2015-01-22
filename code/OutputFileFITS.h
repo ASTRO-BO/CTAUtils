@@ -13,8 +13,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef QL_IO_OUTPUTFILEFITS_H
-#define QL_IO_OUTPUTFILEFITS_H
+#ifndef CTAUTILS_OUTPUTFILEFITS_H
+#define CTAUTILS_OUTPUTFILEFITS_H
 
 #include <stdint.h>
 #include <fitsio.h>
@@ -22,7 +22,7 @@
 #include <stdexcept>
 #include "OutputFile.h"
 
-namespace qlbase {
+namespace CTAUtils {
 
 
 

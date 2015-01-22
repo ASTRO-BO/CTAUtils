@@ -22,6 +22,8 @@
 
 #include "Thread.h"
 
+namespace CTAUtils {
+
 static void* runThread(void* arg)
 {
     return ((Thread*)arg)->run();
@@ -74,4 +76,6 @@ int Thread::detach()
 
 pthread_t Thread::self() {
     return m_tid;
+}
+
 }

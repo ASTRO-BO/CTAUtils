@@ -15,13 +15,13 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef QL_IO_FILE_H
-#define QL_IO_FILE_H
+#ifndef CTAUTILS_FILE_H
+#define CTAUTILS_FILE_H
 
 #include <string>
 #include <stdexcept>
 
-namespace qlbase {
+namespace CTAUtils {
 
 class IOException : public std::runtime_error {
 

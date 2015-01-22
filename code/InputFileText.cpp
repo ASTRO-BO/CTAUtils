@@ -19,7 +19,7 @@
 #include "Definitions.h"
 #include "InputFileText.h"
 
-namespace qlbase
+namespace CTAUtils
 {
 
 template<class T>

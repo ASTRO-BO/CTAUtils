@@ -13,17 +13,17 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef QL_IO_INPUTFILEFITS_H
-#define QL_IO_INPUTFILEFITS_H
+#ifndef CTAUTILS_INPUTFILEFITS_H
+#define CTAUTILS_INPUTFILEFITS_H
 
 #include <stdint.h>
 #include <fitsio.h>
 #include "InputFile.h"
 
-namespace qlbase {
+namespace CTAUtils {
 
 /// FITS file reader (cfitsio wrapping class).
-/// All methods except isOpened() throw qlbase::IOException on errors.
+/// All methods except isOpened() throw CTAUtils::IOException on errors.
 class InputFileFITS : public InputFile {
 
 	public:

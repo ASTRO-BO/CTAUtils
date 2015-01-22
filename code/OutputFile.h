@@ -13,15 +13,15 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef QL_IO_OUTPUTFILE_H
-#define QL_IO_OUTPUTFILE_H
+#ifndef CTAUTILS_OUTPUTFILE_H
+#define CTAUTILS_OUTPUTFILE_H
 
 #include <string>
 #include <stdint.h>
 #include <vector>
 #include "File.h"
 
-namespace qlbase {
+namespace CTAUtils {
 
 enum fieldType
 {

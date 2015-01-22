@@ -20,7 +20,7 @@
 #include "Definitions.h"
 #include "OutputFileFITS.h"
 
-namespace qlbase {
+namespace CTAUtils {
 
 
 #define ERRMSGSIZ 81

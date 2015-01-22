@@ -17,7 +17,7 @@
 #include "InputFileFITS.h"
 #include <cstring>
 
-namespace qlbase {
+namespace CTAUtils {
 
 #define ERRMSGSIZ 81
 

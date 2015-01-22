@@ -13,35 +13,16 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef QL_IO_DEFINITION_H
-#define QL_IO_DEFINITION_H
+#ifndef CTAUTILS_DEFINITION_H
+#define CTAUTILS_DEFINITION_H
 
-#include<iostream>
+#include <iostream>
 
-namespace qlbase
+namespace CTAUtils
 {
 
-#define QL_DEBUG 1
-
-#ifdef QL_DEBUG
-
 #define DEBUG(msg) {std::cout << __FILE__ << ":" << __LINE__ << ":" << __func__ << ": " << msg << std::endl;}
-#else
-#define DEBUG(msg)
-#endif
-
 #define ERR(msg) {std::cerr << msg << std::endl;}
-
-enum FileError {
-    kFileNoError = 0,
-    kFileNoRead,
-    kEndFile,
-    kErrorMoveHeader,
-    kFileStopped,
-    kFileDataError,
-    kReadFileDisabled,
-    kFileErrorRowsTerminated = 307
-};
 
 }
 

@@ -25,6 +25,8 @@
 
 #include <pthread.h>
 
+namespace CTAUtils {
+
 class Thread
 {
   public:
@@ -43,8 +45,6 @@ class Thread
     int        m_running;
     int        m_detached;
 };
-
-#endif
 
 /* EXAMPLE
 class MyThread : public Thread
@@ -73,5 +73,6 @@ int main(int argc, char** argv)
 }
 */
 
- 
- 
+}
+
+#endif

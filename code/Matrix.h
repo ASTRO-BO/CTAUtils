@@ -12,6 +12,8 @@
 #include <cstdio>
 #include <cstring>
 
+namespace CTAUtils {
+
 template <typename T>
 T** matrixCreate(size_t row, size_t col) {
     
@@ -119,7 +121,8 @@ void matrixPrint(size_t row, size_t col, size_t len, T ***d) {
         printf("\n");
     
     }
-    
+}
+   
 }
 
 #endif // __MATRIX_HPP__
