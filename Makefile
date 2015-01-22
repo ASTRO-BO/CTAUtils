@@ -18,7 +18,7 @@
 #		* uninstall: add or remove the files and directories that should be uninstalled
 #############################################################################
 
-PROJECT= RTACoreIce1
+PROJECT= libCTAUtils
 SHELL = /bin/sh
 
 ####### 1) Project names and system
@@ -26,10 +26,10 @@ SHELL = /bin/sh
 SYSTEM= $(shell gcc -dumpmachine)
 #ice, ctarta, mpi, cfitsio
 LINKERENV= cfitsio
-LIB_NAME = libRTAUtils
+LIB_NAME = libCTAUtils
 VER_FILE_NAME = version.h
 #the name of the directory where the conf file are copied (into $(datadir))
-CONF_DEST_DIR = rtautils
+CONF_DEST_DIR = ctautils
 #the name of the icon for the installation
 ICON_NAME=
 
@@ -47,7 +47,7 @@ libdir=$(exec_prefix)/lib
 # The directory to install the info files in.
 infodir=$(exec_prefix)/info
 # The directory to install the include files in.
-includedir=$(exec_prefix)/include/rtautils
+includedir=$(exec_prefix)/include/ctautils
 # The directory to install the icon
 icondir=$(HOME)/.local/share/applications/
 
